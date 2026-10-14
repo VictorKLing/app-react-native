@@ -78,14 +78,14 @@ export default function ProductsScreen() {
 }
 
 const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: '#F5F5F7' },
+  safeArea: { flex: 1, backgroundColor: '#F2F5F7' },
   content: { flexGrow: 1, width: '100%', maxWidth: 560, alignSelf: 'center', paddingHorizontal: 22, paddingTop: 22, paddingBottom: 28 },
   header: { marginBottom: 25 },
   brandRow: { flexDirection: 'row', alignItems: 'center', gap: 9, marginBottom: 13 },
-  brandMark: { width: 18, height: 18, borderRadius: 6, backgroundColor: '#1769E0', alignItems: 'center', justifyContent: 'center' },
+  brandMark: { width: 18, height: 18, borderRadius: 6, backgroundColor: '#176B55', alignItems: 'center', justifyContent: 'center' },
   brandMarkInner: { width: 6, height: 6, borderRadius: 3, backgroundColor: '#FFFFFF' },
   brand: { color: '#737780', fontSize: 11, fontWeight: '700', letterSpacing: 1.5 },
-  title: { color: '#1D1D1F', fontSize: 36, fontWeight: '700', letterSpacing: -1.2 },
+  title: { color: '#1B2938', fontSize: 36, fontWeight: '700', letterSpacing: -1.2 },
   subtitle: { color: '#747780', fontSize: 15, lineHeight: 22, marginTop: 5 },
   resultSection: { marginTop: 28 },
   sectionTitle: { color: '#777A82', fontSize: 13, fontWeight: '600', marginBottom: 11 },

@@ -43,7 +43,7 @@ export function FormTextField({
         placeholder={placeholder}
         placeholderTextColor="#A0A3AA"
         returnKeyType={returnKeyType}
-        selectionColor="#1769E0"
+        selectionColor="#176B55"
         style={[styles.input, !editable && styles.disabled]}
         value={value}
       />
@@ -54,15 +54,15 @@ export function FormTextField({
 
 const styles = StyleSheet.create({
   container: { width: '100%' },
-  label: { color: '#37383D', fontSize: 14, fontWeight: '600', marginBottom: 9 },
+  label: { color: '#364454', fontSize: 13, fontWeight: '700', marginBottom: 8 },
   input: {
     height: 54,
-    borderColor: '#DCDDDF',
+    borderColor: '#DDE5EB',
     borderWidth: 1,
-    borderRadius: 14,
-    backgroundColor: '#FBFBFC',
-    color: '#1D1D1F',
-    fontSize: 16,
+    borderRadius: 10,
+    backgroundColor: '#FAFBFC',
+    color: '#263343',
+    fontSize: 14,
     paddingHorizontal: 15,
   },
   disabled: { color: '#8A8D95', opacity: 0.72 },

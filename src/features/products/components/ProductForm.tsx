@@ -81,9 +81,9 @@ export function ProductForm({ loading, success, onSubmit, onChange, onReset }: P
 const styles = StyleSheet.create({
   card: {
     backgroundColor: '#FFFFFF',
-    borderColor: '#E8E9ED',
+    borderColor: '#E3E9EF',
     borderWidth: 1,
-    borderRadius: 22,
+    borderRadius: 14,
     padding: 20,
   },
   fieldSpacing: { height: 19 },

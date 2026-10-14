@@ -54,7 +54,7 @@ export function EditProductForm({ produto, loading, onSubmit, onChange }: EditPr
 }
 
 const styles = StyleSheet.create({
-  card: { backgroundColor: '#FFFFFF', borderColor: '#E8E9ED', borderWidth: 1, borderRadius: 22, padding: 20 },
+  card: { backgroundColor: '#FFFFFF', borderColor: '#E3E9EF', borderWidth: 1, borderRadius: 14, padding: 20 },
   fieldSpacing: { height: 19 },
   buttonSpacing: { marginTop: 22 },
 });

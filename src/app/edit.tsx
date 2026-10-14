@@ -109,18 +109,18 @@ export default function EditProductScreen() {
 }
 
 const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: '#F5F5F7' },
+  safeArea: { flex: 1, backgroundColor: '#F2F5F7' },
   content: { flexGrow: 1, width: '100%', maxWidth: 560, alignSelf: 'center', paddingHorizontal: 22, paddingTop: 18, paddingBottom: 28 },
   header: { marginBottom: 25 },
   brandRow: { flexDirection: 'row', alignItems: 'center', gap: 9, marginBottom: 13 },
-  brandMark: { width: 18, height: 18, borderRadius: 6, backgroundColor: '#1769E0', alignItems: 'center', justifyContent: 'center' },
+  brandMark: { width: 18, height: 18, borderRadius: 6, backgroundColor: '#176B55', alignItems: 'center', justifyContent: 'center' },
   brandMarkInner: { width: 6, height: 6, borderRadius: 3, backgroundColor: '#FFFFFF' },
   brand: { color: '#737780', fontSize: 11, fontWeight: '700', letterSpacing: 1.5 },
-  title: { color: '#1D1D1F', fontSize: 32, fontWeight: '700', letterSpacing: -1 },
+  title: { color: '#1B2938', fontSize: 32, fontWeight: '700', letterSpacing: -1 },
   subtitle: { color: '#747780', fontSize: 15, lineHeight: 22, marginTop: 5 },
   resultSection: { gap: 14, marginTop: 20 },
   sectionTitle: { color: '#777A82', fontSize: 13, fontWeight: '600', marginBottom: -3 },
   secondaryButton: { minHeight: 48, justifyContent: 'center', alignItems: 'center' },
-  secondaryButtonText: { color: '#1769E0', fontSize: 15, fontWeight: '600' },
+  secondaryButtonText: { color: '#176B55', fontSize: 14, fontWeight: '700' },
   footer: { color: '#9A9CA3', fontSize: 10, fontWeight: '600', letterSpacing: 0.65, marginTop: 'auto', paddingTop: 30, textAlign: 'center' },
 });

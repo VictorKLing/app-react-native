@@ -32,11 +32,11 @@ export function ProductCard({ produto }: ProductCardProps) {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: '#FFFFFF',
-    borderColor: '#E8E9ED',
+    borderColor: '#E3E9EF',
     borderWidth: 1,
-    borderRadius: 22,
+    borderRadius: 14,
     padding: 22,
-    shadowColor: '#1D1D1F',
+    shadowColor: '#243244',
     shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.045,
     shadowRadius: 14,
@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
   badgeText: { fontSize: 10, fontWeight: '700', letterSpacing: 0.35 },
   availableText: { color: '#207443' },
   emptyText: { color: '#666970' },
-  name: { color: '#1D1D1F', fontSize: 24, fontWeight: '600', lineHeight: 30, marginTop: 21 },
+  name: { color: '#1B2938', fontSize: 23, fontWeight: '700', lineHeight: 30, marginTop: 21 },
   divider: { height: 1, backgroundColor: '#ECEDEF', marginVertical: 20 },
   stockLabel: { color: '#777A82', fontSize: 14 },
   stockRow: { flexDirection: 'row', alignItems: 'baseline', gap: 8, marginTop: 4 },
-  stockValue: { color: '#1D1D1F', fontSize: 42, fontWeight: '600', letterSpacing: -1.2 },
+  stockValue: { color: '#1B2938', fontSize: 42, fontWeight: '700', letterSpacing: -1.2 },
   stockUnit: { color: '#777A82', fontSize: 15 },
 });

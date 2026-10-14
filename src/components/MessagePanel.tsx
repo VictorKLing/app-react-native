@@ -17,7 +17,7 @@ export function MessagePanel({ title, description, tone = 'neutral', loading = f
       style={[styles.panel, isError && styles.errorPanel, isSuccess && styles.successPanel]}
     >
       <View style={[styles.icon, isError && styles.errorIcon, isSuccess && styles.successIcon]}>
-        {loading ? <ActivityIndicator color="#1769E0" size="small" /> : (
+        {loading ? <ActivityIndicator color="#176B55" size="small" /> : (
           <Text style={[styles.iconText, isError && styles.errorIconText, isSuccess && styles.successIconText]}>
             {isError ? '!' : isSuccess ? '✓' : 'i'}
           </Text>
@@ -32,12 +32,12 @@ export function MessagePanel({ title, description, tone = 'neutral', loading = f
 const styles = StyleSheet.create({
   panel: {
     alignItems: 'center',
-    borderRadius: 22,
+    borderRadius: 14,
     backgroundColor: '#FFFFFF',
-    borderColor: '#E8E9ED',
+    borderColor: '#E3E9EF',
     borderWidth: 1,
     paddingHorizontal: 24,
-    paddingVertical: 30,
+    paddingVertical: 24,
   },
   errorPanel: { borderColor: '#F0D7D5' },
   successPanel: { borderColor: '#D2E9D9' },
@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
   },
   errorIcon: { backgroundColor: '#FFF0EF' },
   successIcon: { backgroundColor: '#EAF7EF' },
-  iconText: { color: '#1769E0', fontSize: 20, fontWeight: '700' },
+  iconText: { color: '#176B55', fontSize: 20, fontWeight: '700' },
   errorIconText: { color: '#BD3B32' },
   successIconText: { color: '#207443' },
-  title: { color: '#1D1D1F', fontSize: 17, fontWeight: '600', textAlign: 'center' },
+  title: { color: '#263343', fontSize: 16, fontWeight: '700', textAlign: 'center' },
   description: { color: '#70737B', fontSize: 14, lineHeight: 21, marginTop: 7, textAlign: 'center' },
 });

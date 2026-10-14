@@ -48,7 +48,7 @@ export default function ProductDetailsScreen() {
             </Pressable>
           </>
         )}
-        {status === 'idle' && idValido && <ActivityIndicator color="#1769E0" />}
+        {status === 'idle' && idValido && <ActivityIndicator color="#176B55" />}
         <Text style={styles.footer}>API DE PRODUTOS · {API_BASE_URL}</Text>
       </ScrollView>
     </SafeAreaView>
@@ -56,14 +56,14 @@ export default function ProductDetailsScreen() {
 }
 
 const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: '#F5F5F7' },
+  safeArea: { flex: 1, backgroundColor: '#F2F5F7' },
   content: { flexGrow: 1, width: '100%', maxWidth: 560, alignSelf: 'center', paddingHorizontal: 22, paddingTop: 18, paddingBottom: 28 },
   header: { marginBottom: 25 },
   backButton: { alignSelf: 'flex-start', paddingVertical: 8, paddingRight: 12, marginBottom: 16 },
-  backText: { color: '#1769E0', fontSize: 15, fontWeight: '600' },
-  title: { color: '#1D1D1F', fontSize: 30, fontWeight: '700', letterSpacing: -0.8 },
+  backText: { color: '#176B55', fontSize: 14, fontWeight: '700' },
+  title: { color: '#1B2938', fontSize: 30, fontWeight: '700', letterSpacing: -0.8 },
   subtitle: { color: '#747780', fontSize: 15, lineHeight: 22, marginTop: 5 },
-  editButton: { minHeight: 52, marginTop: 18, alignItems: 'center', justifyContent: 'center', borderRadius: 15, backgroundColor: '#1769E0' },
+  editButton: { minHeight: 48, marginTop: 18, alignItems: 'center', justifyContent: 'center', borderRadius: 11, backgroundColor: '#176B55' },
   editButtonText: { color: '#FFFFFF', fontSize: 15, fontWeight: '600' },
   footer: { color: '#9A9CA3', fontSize: 10, fontWeight: '600', letterSpacing: 0.65, marginTop: 'auto', paddingTop: 30, textAlign: 'center' },
 });
