@@ -24,7 +24,7 @@ export default function RootLayout() {
           drawerActiveTintColor: '#176B55',
           drawerActiveBackgroundColor: '#E8F4EF',
           drawerInactiveTintColor: '#687585',
-          drawerLabelStyle: { fontSize: 14, fontWeight: '600', marginLeft: -14 },
+          drawerLabelStyle: { fontSize: 14, fontWeight: '600', marginLeft: 10 },
           drawerItemStyle: { borderRadius: 11, marginHorizontal: 12, marginVertical: 3 },
         }}
       >

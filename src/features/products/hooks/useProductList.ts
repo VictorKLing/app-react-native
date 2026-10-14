@@ -21,7 +21,7 @@ export function useProductList() {
       setStatus('ready');
     } catch (error) {
       setProdutos([]);
-      if (error instanceof ApiError && (error.status === 404 || error.status === 405)) {
+      if (error instanceof ApiError && error.status === 405) {
         setStatus('unavailable');
       } else {
         setMensagemErro(error instanceof Error ? error.message : 'Ocorreu um erro ao carregar os produtos.');

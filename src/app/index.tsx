@@ -38,7 +38,7 @@ export default function ProductsScreen() {
       await excluir(produtoSelecionado.id);
       setProdutoSelecionado(null);
     } catch (error) {
-      if (error instanceof ApiError && (error.status === 404 || error.status === 405)) {
+      if (error instanceof ApiError && error.status === 405) {
         setExclusaoIndisponivel(true);
       } else {
         setErroExclusao(error instanceof Error ? error.message : 'Não foi possível excluir o produto.');

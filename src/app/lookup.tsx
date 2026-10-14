@@ -25,10 +25,6 @@ export default function ProductsScreen() {
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.header}>
-          <View style={styles.brandRow}>
-            <View style={styles.brandMark}><View style={styles.brandMarkInner} /></View>
-            <Text style={styles.brand}>INVENTÁRIO</Text>
-          </View>
           <Text style={styles.title}>Produtos</Text>
           <Text style={styles.subtitle}>Consulte os detalhes e a disponibilidade de um produto.</Text>
         </View>
