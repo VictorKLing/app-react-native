@@ -12,6 +12,8 @@ export class ApiError extends Error {
 export const API_BASE_URL: string;
 
 export function buscarProduto(id: number): Promise<Produto | null>;
+export function listarProdutos(): Promise<Produto[]>;
 export function cadastrarProduto(produto: Omit<Produto, 'id'>): Promise<Produto>;
 export function atualizarEstoque(id: number, qtdDisponivel: number): Promise<Produto | null>;
+export function excluirProduto(id: number): Promise<unknown>;
 export function consultarQuantidade(id: number): Promise<number | null>;

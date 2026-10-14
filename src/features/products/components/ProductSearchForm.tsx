@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { FormTextField } from '@/components/FormTextField';
 import { PrimaryButton } from '@/components/PrimaryButton';
 
 type ProductSearchFormProps = {
@@ -25,24 +26,18 @@ export function ProductSearchForm({ loading, onSearch, onValueChange }: ProductS
 
   return (
     <View style={styles.card}>
-      <Text style={styles.label}>Código do produto</Text>
-      <TextInput
-        accessibilityLabel="Código do produto"
-        autoCapitalize="none"
-        autoCorrect={false}
-        editable={!loading}
-        keyboardType="number-pad"
-        maxLength={9}
+      <FormTextField
+        label="Código do produto"
+        value={codigo}
         onChangeText={alterarCodigo}
         onSubmitEditing={buscar}
         placeholder="Digite o ID"
-        placeholderTextColor="#A0A3AA"
+        helper="Use o ID retornado ao cadastrar o produto."
+        keyboardType="number-pad"
+        maxLength={9}
+        editable={!loading}
         returnKeyType="search"
-        selectionColor="#1769E0"
-        style={styles.input}
-        value={codigo}
       />
-      <Text style={styles.hint}>Use o ID retornado ao cadastrar o produto.</Text>
       <View style={styles.buttonWrap}>
         <PrimaryButton label="Buscar produto" onPress={buscar} disabled={!codigoValido} loading={loading} />
       </View>
@@ -58,17 +53,5 @@ const styles = StyleSheet.create({
     borderRadius: 22,
     padding: 20,
   },
-  label: { color: '#37383D', fontSize: 14, fontWeight: '600', marginBottom: 9 },
-  input: {
-    height: 54,
-    borderColor: '#DCDDDF',
-    borderWidth: 1,
-    borderRadius: 14,
-    backgroundColor: '#FBFBFC',
-    color: '#1D1D1F',
-    fontSize: 16,
-    paddingHorizontal: 15,
-  },
-  hint: { color: '#8A8D95', fontSize: 12, lineHeight: 17, marginTop: 8 },
   buttonWrap: { marginTop: 18 },
 });

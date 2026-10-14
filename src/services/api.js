@@ -51,6 +51,10 @@ export function buscarProduto(id) {
   return request(`/produtos/${encodeURIComponent(id)}`);
 }
 
+export function listarProdutos() {
+  return request('/produtos');
+}
+
 export function cadastrarProduto(produto) {
   return request('/produtos', {
     method: 'POST',
@@ -63,6 +67,10 @@ export function atualizarEstoque(id, qtdDisponivel) {
     method: 'PUT',
     body: JSON.stringify({ qtdDisponivel }),
   });
+}
+
+export function excluirProduto(id) {
+  return request(`/produtos/${encodeURIComponent(id)}`, { method: 'DELETE' });
 }
 
 export function consultarQuantidade(id) {
